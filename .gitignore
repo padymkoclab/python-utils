@@ -2,4 +2,5 @@
 *.pyc
 .cache
 .ipynb_checkpoints
+*.sublime-workspace
 __pycache__

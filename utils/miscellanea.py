@@ -1,9 +1,10 @@
+"""Utils without category."""
 
 import os
 
 
-def main():
-
+def printANSI():
+    """Print in terminal most used ANSI-codes."""
     escape_code = '\033'
     console_width = os.get_terminal_size().columns
 
@@ -16,7 +17,3 @@ def main():
                     m = '{}[{} {} {}[00m'.format(escape_code, s, s, escape_code)
                     print(m, end='')
             print()
-
-
-if __name__ == '__main__':
-    main()

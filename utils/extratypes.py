@@ -63,6 +63,7 @@ class Immutable(object):
         pass
 
 
+raise Not
 # @functools.total_ordering
 class A:
 
@@ -89,7 +90,7 @@ class A:
 
     #     return self.n <= other.n
 
-
+"""
 A1 = A(4)
 A2 = A(3)
 assert A1 > A2
@@ -97,3 +98,4 @@ assert not A1 < A2
 assert not A1 == A2
 assert A1 >= A2
 assert not A1 <= A2
+"""

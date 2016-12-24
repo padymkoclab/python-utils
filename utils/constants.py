@@ -42,28 +42,6 @@ CHOICES_LEXERS = [
 ]
 
 
-PRETTY_COLORS = [
-    '#222222',
-    '#85cd85',
-    '#85cd1c',
-    '#008000',
-    '#808080',
-    '#0000FF',
-    '#808000',
-    '#008080',
-    '#800000',
-    '#800080',
-    '#EEAA00',
-    '#EE4921',
-    '#8B5A8B',
-    '#003FCD',
-    '#c9366e',
-    '#b1744e',
-    '#f292c7',
-    '#9e617b',
-]
-
-
 class Constant(object):
     """
     Implementation strict constants in Python 3.
@@ -110,7 +88,6 @@ class Constant(object):
     >>> d['F'] == frozenset({1.2})
     True
     """
-
     def __setattr__(self, name, value):
         """Declaration a constant with value. If mutable - it will be converted to immutable, if possible.
         If the constant already exists, then made prevent againt change it."""
