@@ -2,7 +2,7 @@
 import re
 import subprocess
 
-from ..system import get_screen_dimensions
+from utils.system import get_screen_dimensions
 
 
 def test_get_screen_dimensions_test():

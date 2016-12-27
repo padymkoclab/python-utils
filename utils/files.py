@@ -24,6 +24,3 @@ def generateImage(text=None, path='.'):
         draw.text((width / 2.75, height / 2), text, (255, 255, 255), font)
 
     img.show()
-
-
-generateImage("Beauty image")

@@ -3,7 +3,7 @@ import unittest
 
 import pytest
 
-from ..math import count_combinations, fibonacci
+from utils.maths import count_combinations, fibonacci
 
 
 class MathTest(unittest.TestCase):

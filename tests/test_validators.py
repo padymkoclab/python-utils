@@ -1,7 +1,7 @@
 
 import unittest
 
-from ..validators import uuid, slug, ipv4, ipv6
+from utils.validators import uuid, slug, ipv4, ipv6
 
 
 class ValidatorTest(unittest.TestCase):

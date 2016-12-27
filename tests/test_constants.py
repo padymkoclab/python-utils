@@ -4,7 +4,7 @@ import uuid
 import datetime
 import unittest
 
-from ..constants import Constant
+from utils.constants import Constant
 
 
 class TestConstant(unittest.TestCase):

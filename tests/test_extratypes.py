@@ -2,7 +2,7 @@
 import collections
 import unittest
 
-from ..extratypes import frozendict
+from utils.extratypes import frozendict
 
 
 class FrozendictTest(unittest.TestCase):
