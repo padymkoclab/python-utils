@@ -3,69 +3,52 @@
 
 # http://stackoverflow.com/questions/280243/python-linked-list
 
-class linkedListNode(object):
-    """Node of linked list."""
+class linkedList(object):
+    """Linked list of nodes."""
 
-    def __init__(self, cargo, next_):
+    def __init__(self, cargo=None):
         self._cargo = cargo
-        self._next = next_
+        self._next = None
 
-    @property
-    def cargo(self):
-        return self._cargo
+    def __len__(self):
 
-    @cargo.setter
-    def cargo(self, value):
-        self._cargo = value
+        return 1
 
-    @property
-    def next(self):
-        return self._next
+    def __add__(self):
 
-    @next.setter
-    def next(self, node):
-        self._next = node
+        return 1
+
+    def __repr__(self):
+
+        return 1
 
     def __str__(self):
 
         return str(self.cargo)
 
+    @property
+    def cargo(self):
+        """Return value of node."""
 
-class linkedList(object):
-    """Linked list."""
+        return self._cargo
 
-    def __init__(self):
-        self.current_node = None
+    @cargo.setter
+    def cargo(self, value):
+        """Set value of node."""
 
-    def __len__(self):
-        length = 0
-        node = self.current_node
-        while node is not None:
-            length += 1
-            node = node.next
-        return length
+        self._cargo = value
 
-    def __repr__(self):
+    @property
+    def next(self):
+        """Return a next node."""
 
-        return '{0}({1!s})'.format(self.__class__.__name__, self)
+        return self._next
 
-    def __str__(self):
+    @next.setter
+    def next(self, node):
+        """Set a next node."""
 
-        if self.current_node is None:
-            return "()"
-
-        result = list()
-        node = self.current_node
-        while node is not None:
-            result.append(str(node))
-            node = node.next
-        return ', '.join(result)
-
-    def __add__(self, cargo):
-        """Add node."""
-
-        node = linkedListNode(cargo, self.current_node)
-        self.current_node = node
+        self._next = node
 
     def reverse(self):
         pass
@@ -81,7 +64,8 @@ class linkedList(object):
         self.__init__()
 
 
-# lst = linkedList()
+lst = linkedList()
+print(lst)
 
 # lst + 213
 # lst + 542
