@@ -2,7 +2,7 @@
 #!/usr/bin/python3
 
 """
-Constants for Python programming language
+Constants
 """
 
 import collections
@@ -12,34 +12,6 @@ __all__ = ('const', )
 
 
 RUSSIAN_LETTERS = 'АБВГДЕЁЖЗИЙКЛМНОПРТУФХЦЧШЩЫЭЮЯабвгдеёжзийклмнопрстуфхцчшщыьэюя'
-
-CHOICES_LEXERS = [
-    ('awk', 'Awk'),
-    # ('base_makefile', 'Base Makefile'),
-    ('bash', 'Bash'),
-    ('coffeescript', 'CoffeeScript'),
-    ('css', 'CSS'),
-    ('css_django_jinja', 'CSS+Django/Jinja'),
-    ('django_jinja', 'Django/Jinja'),
-    ('html', 'HTML'),
-    ('html_django_jinja', 'HTML+Django/Jinja'),
-    ('ipython3', 'IPython'),
-    ('javascript', 'JavaScript'),
-    ('javascript_django_jinja', 'JavaScript+Django/Jinja'),
-    ('json', 'JSON'),
-    # ('lesscss', 'LessCss'),
-    # ('makefile', 'Makefile'),
-    ('mysql', 'MySQL'),
-    ('numpy', 'NumPy'),
-    ('postgresql_console', 'PostgreSQL'),
-    # ('python2', 'Python 2'),
-    ('python3', 'Python'),
-    ('restructuredtext', 'reStructuredText'),
-    # ('sass', 'Sass'),
-    ('sql', 'SQL'),
-    ('xml', 'XML'),
-    ('yaml', 'YAML'),
-]
 
 
 class Constant(object):
@@ -88,6 +60,7 @@ class Constant(object):
     >>> d['F'] == frozenset({1.2})
     True
     """
+
     def __setattr__(self, name, value):
         """Declaration a constant with value. If mutable - it will be converted to immutable, if possible.
         If the constant already exists, then made prevent againt change it."""

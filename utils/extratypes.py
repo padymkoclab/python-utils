@@ -63,7 +63,7 @@ class Immutable(object):
         pass
 
 
-# raise NotImplementedError
+raise NotImplementedError
 # @functools.total_ordering
 class A:
 

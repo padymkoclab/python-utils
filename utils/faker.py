@@ -5,7 +5,7 @@ import factory
 
 
 def show_all_possible_fakers(print_variants=True):
-    """Display name all providers of Faker."""
+    """Display name all providers of fakers with examples for the Factory Boy."""
 
     all_formatters = list()
     for attribute in dir(factory.Faker._get_faker()):

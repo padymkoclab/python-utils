@@ -1,3 +1,3 @@
 
-class ValidatorFailure(Exception):
+class ValidatorionFailure(Exception):
     pass
