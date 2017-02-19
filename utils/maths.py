@@ -3,7 +3,8 @@ import math
 
 
 def count_combinations(n_objects: int, n_sample: int) -> int:
-    """
+    """Return a count combinations from number of disticts objects by size of a sample.
+
     https://en.wikipedia.org/wiki/Combination
     C(n, r) = n! / r! * (n - r)!
     """
@@ -25,7 +26,7 @@ def count_combinations(n_objects: int, n_sample: int) -> int:
 
 
 def fibonacci(num):
-    """ """
+    """Return a number from the sequance Fibonnaci by an index."""
 
     if not isinstance(num, int) or num < 0:
         raise ValueError('Sequence Fibonacci can be determined only for positive integer')
